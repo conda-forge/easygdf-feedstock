@@ -29,7 +29,7 @@ test:
   imports:
     - easygdf
   commands:
-    - python -m unittest detect
+    - python -m unittest discover
 
 about:
   home: https://github.com/electronsandstuff/easygdf
