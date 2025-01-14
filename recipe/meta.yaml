@@ -33,7 +33,7 @@ test:
   requires:
     - pytest
   commands:
-    - python -m unittest discover tests
+    - cd tests && python -m unittest discover .
 
 about:
   home: https://github.com/electronsandstuff/easygdf
