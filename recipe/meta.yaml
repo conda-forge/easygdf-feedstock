@@ -30,10 +30,8 @@ test:
     - tests
   imports:
     - easygdf
-  requires:
-    - pytest
   commands:
-    - cd tests && python -m unittest discover .
+    - cd tests && python -m unittest
 
 about:
   home: https://github.com/electronsandstuff/easygdf
