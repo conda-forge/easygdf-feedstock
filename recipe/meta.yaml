@@ -31,7 +31,7 @@ test:
   imports:
     - easygdf
   commands:
-    - cd tests && python -m unittest
+    - python -m unittest
 
 about:
   home: https://github.com/electronsandstuff/easygdf
