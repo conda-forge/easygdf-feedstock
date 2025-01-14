@@ -1,5 +1,5 @@
 {% set name = "easygdf" %}
-{% set version = "2.0.7" %}
+{% set version = "2.1.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/easygdf-{{ version }}.tar.gz
-  sha256: 89df22e2fde53003c685ce20386caa108b659b02f39a4417b3edb6d5a38bb546
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/easygdf-{{ version }}.tar.gz
+  sha256: c6280896e69e872948a57de3b5dd0c4ceeab0f396fa4c2a140042a267e5e0928
 
 build:
   number: 0
