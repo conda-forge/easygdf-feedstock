@@ -26,10 +26,14 @@ requirements:
     - python >=3.6
 
 test:
+  source_files:
+    - tests
   imports:
     - easygdf
+  requires:
+    - pytest
   commands:
-    - python -m unittest discover
+    - python -m unittest discover tests
 
 about:
   home: https://github.com/electronsandstuff/easygdf
