@@ -28,9 +28,8 @@ requirements:
 test:
   imports:
     - easygdf
-    - easygdf.tests
   commands:
-    - python -m unittest easygdf.tests
+    - python -m unittest detect
 
 about:
   home: https://github.com/electronsandstuff/easygdf
