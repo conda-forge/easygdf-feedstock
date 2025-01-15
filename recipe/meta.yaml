@@ -26,11 +26,12 @@ requirements:
     - python >=3.6
 
 test:
+  source_files:
+    - tests
   imports:
     - easygdf
-    - easygdf.tests
   commands:
-    - python -m unittest easygdf.tests
+    - python -m unittest discover tests
 
 about:
   home: https://github.com/electronsandstuff/easygdf
@@ -38,7 +39,7 @@ about:
   summary: A python library to make working with GDF files a breeze.
   description: EasyGDF is a python library that simplifies the loading and saving of general datafile format (GDF) files used in the particle accelerator simulation code General Particle Tracer (GPT).
   license: BSD-3-Clause
-  license_file: LICENSE
+  license_file: LICENSE.txt
 
 extra:
   recipe-maintainers:
