@@ -11,7 +11,7 @@ source:
   sha256: 920bd033781870f085fdc7127b2d8bd48e7073df1fa5a90f5dfaca96b5de1b97
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,13 +19,15 @@ requirements:
   host:
     - pip
     - setuptools
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - numpy
     - setuptools
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   source_files:
     - tests
   imports:
